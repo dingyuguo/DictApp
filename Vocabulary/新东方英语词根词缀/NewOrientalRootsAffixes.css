@@ -1,0 +1,446 @@
+
+/* Global setting */
+/* 全局设定 */
+body {
+	font-size: 1em;
+	line-height: 1.618em;
+ 
+}
+
+/* Recommended Text indent */
+/* 全文首行缩进2各个中文字符 */
+p {
+	text-indent: 0em;
+	margin: 0px 0px 0px 0px;
+}
+
+/* 版权信息页标题 */
+/* Copyright page title */
+h1.kindle-cn-copyright-title {
+	page-break-before: always;
+	font-size: 1.2em; 
+	text-align: center; 
+	border-width: 1.5px;
+	margin:0.5em 0em 0.5em 0em;
+	border-style: none none solid none;
+	
+}
+
+/* 版权信息页正文 */
+/* Copyright page text */
+p.kindle-cn-copyright-text {
+	line-height: 1.618;
+	text-indent: 0em;
+}
+/* 前言 */
+h1.qy{
+	text-align:center;
+	margin-top:3em;
+}
+h2{
+	text-align: center;
+	text-indent: 0em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+
+}
+
+h5{
+	font-size: 1.05em;
+	text-indent: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+
+}
+
+h6{
+	font-size: 1em;
+	text-indent: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+
+}
+
+
+/* 正文 */
+p.qianyan{
+	text-indent: 2em;
+}
+
+/* 居左*/
+p.juzuo{
+	text-indent: 0em;
+	text-align: left;
+	
+}
+
+
+/* 表格 */
+table.body {
+	margin: 0.8em 0em 1.5em 0em;
+	border-style: none none solid solid;
+	border-width: 1px;
+}
+
+/* 内文表格 */
+table.table-body {
+    
+	border-style: solid none none none;
+	border-width: 1px;
+	font-size: 1em;
+	text-align: center;
+	width: 100%;
+	border-color: #000000;
+	margin: 0.5em auto 1em auto;
+}
+
+/* 单元格右下线-t*/
+td.rt1{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none solid solid none;
+	
+	text-align: center;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+
+}
+/* 单元格无线，文字左-t*/
+td.rt2{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none none solid none;
+ 	
+	text-align: center;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+
+}
+
+/* 单元格右下线*/
+td.rn1{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none solid solid none;
+    
+	text-align: left;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+
+}
+/* 单元格无线，文字左*/
+td.rn2{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none none solid none;
+    
+	text-align: left;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+
+}
+
+/* 单元格右*/
+td.rn3{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none solid none none;
+    
+	text-align: left;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+}
+/* 单元格右*/
+td.rn4{
+	vertical-align: middle;
+	font-size: 1em;
+	border-width: 1px;
+	border-style: none;
+    
+	text-align: left;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+}
+
+/* 单元格右下线*/
+td.rn5{
+	vertical-align: bottom;
+	font-size: 1em;
+    
+	text-align: left;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* 表格 */
+table.body {
+	margin: 0.8em auto 1em auto;
+	width: 100%;
+	border-style: none;
+}
+
+/* 普通单元格 */
+td.dyg {
+	vertical-align: top;
+	width: 30%;
+	border-style: none;
+}
+/* 普通单元格1 */
+td.dyg1 {
+	vertical-align: top;
+	padding-left: 0.5em;
+	width: 70%;
+	border-style: none;
+}
+
+/* 普通单元格4 */
+td.dyg4 {
+	vertical-align: middle;
+	width: 25%;
+	border-style: none;
+}
+/* 普通单元格5 */
+td.dyg5 {
+	vertical-align: middle;
+	width: 25%;
+	border-style: none;
+}
+
+/*正文图表*/
+.bodyPic {
+	text-align:center;
+	font-size:0%;
+}
+
+/* 加黑 */
+.bold {
+font-weight: bold;
+}
+
+
+/* 图片样式100 */
+img.image {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+ /*图表注释*/
+.imgDescript {
+	font-size:0.8em;
+	line-height:1.5em;
+	text-align:center;
+	letter-spacing:auto;
+	text-indent: 0em;
+}
+
+
+/* Sign */
+/* 签名 */
+p.fnoteRight{
+	
+	text-align: right;
+	line-height:1.2em;
+
+}
+
+/* 框-div */
+div.knowledge-point-div {
+	font-size: 1em;
+	padding: 0.5em;
+	margin: 1.5em 0em 1.5em 0em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #909090;
+	border-radius: 0.5em;
+}
+/* 框-div1 */
+div.knowledge-point-div1 {
+	font-size: 1em;
+	padding: 0.5em;
+	margin-top: 4em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #909090;
+	border-radius: 0.5em;
+}
+/* 楷体*/
+p.kaiti{
+	font-size: 0.9em;
+	
+	margin-left: 0em;
+}
+
+/* 斜体 */
+span.textItalic {
+	font-style: italic;
+}
+
+/* 居中标题*/
+p.juzhong{
+	
+	font-size: 1.2em;
+	font-weight:bold;
+	text-align: center;
+	margin-top:1.5em;
+	margin-bottom:0.8em;
+}
+/* 代码标题 */
+p.codetitle{
+	
+	font-size:0.9em;
+	padding-bottom: 0.2em;
+	text-align: left;
+	border-bottom: solid 1px;
+	margin-top: 1.2em;
+	text-indent: 0em;
+}
+
+@font-face {
+ font-family: yinbiao;
+ src: url(XXXXXXXXXXXXXXXX);
+}
+
+
+.cn-kindle-yinbiao {
+
+}
+
+/* 表格 */
+table.body {
+	
+	font-weight: normal;
+	border-style: none none none none;
+	border-width: 1px;
+	border-color: #000000;
+	margin: 1em auto 1em auto;
+}
+
+/* 单元格-顶部10 */
+td.rt10 {
+	
+	vertical-align: middle;
+	width: 10%;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border-style: solid solid solid solid;
+	border-width: 1px;
+	border-color: #000000;
+	text-align: center;
+}
+/* 单元格10 */
+td.rn10 {
+	
+	vertical-align: middle;
+	width: 10%;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border-style: solid solid solid solid;
+	border-width: 1px;
+	border-color: #000000;
+	text-align: center;
+}
+
+
+
+
+div.golden-dict-padding {
+	width: 100%;
+	height: 1px;
+}
+
+div.word-entry.non-golden-dict-padding, div.key-word-entry.non-golden-dict-padding {
+	margin-bottom: 8px;
+}
+
+p.non-golden-dict-padding {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+span.word-delimiter {
+	display: none;
+}
+
+div.head-words a {
+	margin-right: 10px;
+	display: inline-block;
+	font-weight: bold;
+    font-size: 1.1em;
+}
+
+div.head-words a.key-head-word, div.words-entries.default-show-key-head-word-only div.key-word-entry.key-head-word, .key-sense {
+	color: #da3e3e;
+	background-color: #e9f1df;
+}
+
+span.item-num {
+	display: none;
+}
+
+h2.sigil_not_in_toc[onclick], div.sense>p {
+	cursor: pointer;
+}
+
+p.sense {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #0c85cc;
+    font-weight: bold;
+}
+
+span.textItalic {
+    color: darkslategray;	
+}
+
+.flashing-shown-word-entry {
+	color: yellow;
+	background-color: red;	
+}
+
+div.word-entry, div.key-word-entry {
+	margin-bottom: 5px;
+}
+
+div.word-entry>p:first-child {
+	display: inline;
+	margin-right: -5px;
+}
+
+p.meaning {
+	color: mediumvioletred;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+p.derive {
+	color: green;
+	display: inline-block;
+}
+
+p.use {
+	margin-left: 10px;
+	color: #b9651e;
+}
+
+p.example {
+	display: block;
+}
+
+p.example-en {
+	display: inline-block;
+	margin-left: 10px;
+	color: gray;	
+}
+
+p.example-cn {
+	display: inline-block;
+	margin-left: 10px;
+	color: #0c989a;
+	font-size: 0.90em;
+}
+
+span.star {
+	margin-left: 3px;
+	color: #d22323;
+}

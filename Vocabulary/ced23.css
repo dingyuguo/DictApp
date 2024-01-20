@@ -1,0 +1,149 @@
+/* make dict inline */
+    div.ced23 > div.dictlink * {
+        display: inline;
+    }
+    div.ced23 > div.dictentry.dictlink * {
+        display: inline;
+    }
+/* title_frequency_container */
+    div.ced23 div#popup-frequency > div.popup-popup > div.word-frequency-container > span.word-frequency-img[data-band="5"]::before {
+        content: "🥇";
+        /* 1000 */
+    }
+    div.ced23 div#popup-frequency > div.popup-popup > div.word-frequency-container > span.word-frequency-img[data-band="4"]::before {
+        content: "🥈"
+        /* 4000 */
+    }
+    div.ced23 div#popup-frequency > div.popup-popup > div.word-frequency-container > span.word-frequency-img[data-band="3"]::before {
+        content: "🥉"
+        /* 10000 */
+    }
+    div.ced23 div#popup-frequency > div.popup-popup > div.word-frequency-container > span.word-frequency-img[data-band="2"]::before {
+        content: "🏅"
+        /* 30000 */
+    }
+    div.ced23 div#popup-frequency > div.popup-popup > div.word-frequency-container > span.word-frequency-img[data-band="1"]::before {
+        content: "🌓"
+        /* 50% */
+    }
+/* hwd */
+    div.ced23 h2.h2_entry span.homnum {
+        position: relative;
+        top: -0.5rem;
+        left: -0.5rem;
+        font-size: 1rem !important;
+    }
+    /* other forms */
+    div.ced23 span.orth {
+        font-weight: 900;
+        padding-left: 0.5rem;
+    }
+/* pron */
+
+/* part of speech */
+    div.ced23 span.pos {
+        border: thin solid white;
+        margin: 0 0.2rem;
+        display: inline-block;
+        border-radius: 4px;
+        font-family: serif;
+        background-color: black;
+        font-weight: 900;
+        color: white;
+        padding: 0 0.2rem;
+    }
+    /* var forms */
+    div.ced23 span.form b.var::before {
+        content: "•";
+        color: gray;
+    }
+    div.ced23 span.form b.var {
+        color: gray !important;
+        font-size: normal !important;
+        padding-left: 1rem;
+    }
+/* links */
+    div.ced23 a {
+        color: black;
+        text-decoration: none !important;
+        border-bottom: 0.066rem dotted gray;
+    }
+/* 123 */
+    div.ced23 div.sense span.sensenum {
+        font-weight: 900;
+        padding-left: 1rem;
+    }
+/* abc */
+    div.ced23 div.sense div.sense span.sensenum {
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.7);
+    }
+/* example sentence */
+    div.ced23 div.type-example {
+        color: gray;
+    }
+    div.ced23 div.type-example::before {
+        content: "•";
+        color: gray;
+    }
+/* xr */
+    div.ced23 span.xr::before {
+        content: "☛";
+        color: gray;
+        padding-left: 0.5rem;
+    }
+/* derived */
+    div.ced23 div.derivs {
+        display: block !important;
+    }
+    div.ced23 div.derivs::before {
+        content: "★";
+    }
+    div.ced23 div.derivs span.pos {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+/* origins */
+    div.ced23 div.etyms::before { content: "☯"; margin: 0 0.2rem 0 0.4rem;font-weight: 900; }
+    div.ced23 div.etyms div.entry_title { display: none; }
+    div.ced23 span.hi {
+        font-style: italic !important;
+        font-family: serif !important;
+    }
+/* The delimiter between it and its original hwd  */
+    div.ced23 div.dictentry.dictlink[data-xrparent="true"] {
+        border-bottom: 1px dotted grey;
+    }
+/* remove ... */
+    /* remove copyright */
+        div.ced23 div.copyright {
+            display: none !important;
+        }
+    /* remove ad */
+        div.ced23 div[id^="ad_contentslot"] {
+            display: none !important;
+        }
+    /* remove Share */
+        div.ced23 div#share-modal {
+            display: none !important;
+        }
+    /* remove Credits */
+        div.ced23 div#popup-modal {
+            display: none !important;
+        }
+    /* remove dict name */
+        div.ced23 span.dictname {
+            display: none !important;
+        }
+    /* remove useless info in word frequency */
+        /* text: Word Frequency */
+            div.ced23 div#popup-frequency > div.popup-popup > div.popup-title {
+                display: none;
+            }
+        /* text: X */
+            div.ced23 div#popup-frequency > div.popup-popup > a.popup-close-frequency {
+                display: none;
+            }
+    /* remove icon of IPA guide */
+        div.ced23 a.pronIPASymbol {
+            display: none !important;
+        }
