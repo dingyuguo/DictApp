@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-""" web server 用于查询英汉词典，汉英词典 """
 import os
 import sys
 from readmdict import MDX
 from flask import Flask, request, render_template
 from glob import glob
 import shutil
-#os.chdir("/flask")
-# 加载.mdx文件
+
+# 加载.mdx文件,修改此处，可以更换不同的mdx；
+# 注意： 路径下必须同时包含mdx和css文件。
 dict_dir = 'Vocabulary/新东方英语词根词缀'
 
 mdx_name = glob(os.path.join(dict_dir,'*.mdx'))[0]
@@ -37,7 +37,6 @@ def index():
  
 @app.route('/trans', methods=['POST'])
 def trans():
-    """ 英译中 """
     result = ''
     if request.method == 'POST':
         try:
@@ -50,9 +49,9 @@ def trans():
         if not txt.isascii():
             return 'Maybe text is not english'
         word = txt.encode()
-        word1 = txt.capitalize().encode() # 第1个字母变大写
+        word1 = txt.capitalize().encode() 
         global headwords, items
-        try: # 查词，返回单词和html文件
+        try: 
             if word in headwords:
                 wordIndex = headwords.index(word)
             else:
