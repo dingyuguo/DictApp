@@ -9,6 +9,7 @@ import shutil
 # 加载.mdx文件,修改此处，可以更换不同的mdx；
 # 注意： 路径下必须同时包含mdx和css文件。
 dict_dir = 'Vocabulary/新东方英语词根词缀'
+dict_dir = 'Vocabulary/etymology'
 
 mdx_name = glob(os.path.join(dict_dir,'*.mdx'))[0]
 css_name = glob(os.path.join(dict_dir,'*.css'))[0]

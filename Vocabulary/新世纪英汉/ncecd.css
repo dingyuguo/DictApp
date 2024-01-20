@@ -1,0 +1,365 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,pre,blockquote {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+legend,ul,ol {
+    padding: 0
+}
+
+p {
+    text-indent: 0;
+    word-wrap: break-word;
+}
+
+.header {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+}
+
+.ncecd_con {
+    display: inline;
+}
+
+.class_box {
+    margin: .7em 0 .3em;
+    color: #444;
+    font-weight: 700;
+}
+
+.class {
+    margin-left: .3em;
+    color: #444;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.class + .etips, .class + .tense {
+    display: block;
+    margin: 0 0 .3em;
+}
+
+.label_box {
+    margin: .3em 0;
+}
+
+.label {
+    font-size: 85%;
+    color: slategray;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+.tense {
+    margin: 0 .3em;
+    font-size: 95%;
+    display: block;
+    color: slategray;
+    text-transform: lowercase;
+}
+
+.tense b {
+    color: initial;
+    text-transform: initial;
+    color: slategray;
+}
+
+.label + .label {
+    margin-left: 0;
+}
+
+.label:before {
+}
+
+.label:after {
+}
+
+.etips {
+    color: gray;
+}
+
+/*sense*/
+.sense {
+    position: relative;
+    margin: .3em 0;
+    padding-left: 1em;
+}
+
+.sense .zh {
+    margin-left: .2em;
+    /*color: black;*/
+}
+
+.sense i {
+    font-style: normal;
+}
+
+.num {
+    display: inline-block;
+    margin: 0 .3em 0 -1em;
+    color: #343434;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.num:after {
+    content: '';
+}
+
+.also {
+    margin: .5em 1em;
+    color: #444;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    -epub-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+}
+
+.also .zh {
+    margin-left: .3em;
+    color: black;
+}
+
+.also b {
+    font-size: 85%;
+    color: olive;
+    font-weight: 400;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.also b:after {
+}
+
+.sense .also {
+    margin: 0 0 0 .5em;
+}
+
+/*example*/
+.ex {
+    position: inherit;
+    margin-left: 1.5em;
+    color: #a0806d;
+    background-color: #f8f4ef;
+    margin-right: 0.5em;
+    /* padding: 0.1em; */
+    padding-top: 0.1em;
+    padding-right: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.4em;
+}
+
+.ex:before {
+    ;margin-right: .2em;
+    font-size: 80%;
+}
+
+.ex .zh {
+    color: #868583;
+    display: block;
+    padding-bottom: 0.2em;
+}
+
+/*phrasal*/
+.phr {
+    position: relative;
+    margin: 1em 0;
+    padding: .3em;
+    border-radius: .1em;
+    background: #f7f7f7;
+}
+
+.phr b {
+    margin-right: .5em;
+    color: orange;
+    font-variant: small-caps;
+}
+
+.phr b:after {
+    content: ':';
+}
+
+fieldset.usage {
+    border: 1.5px solid gray;
+}
+
+legend.usage.title {
+    font-weight: bold;
+}
+
+/*Link*/
+a {
+    color: #369;
+    text-decoration: none;
+    padding: 0 0.2em;
+    border-bottom: 1px dotted;
+}
+
+/*Culture Note*/
+fieldset.culture.note {
+    border: 1.5px solid gray;
+}
+
+legend.culture.notehead {
+    font-weight: bold;
+}
+
+.culture.notetitle {
+    font-weight: bold;
+}
+
+/*indx*/
+NCECD img {
+    width: 640px;
+    max-width: 100%;
+}
+
+NCECD img.img_big {
+    width: 100%;
+    max-width: 100%;
+}
+
+span.pluralor {
+    padding-left: 2px;
+    padding-right: 3.5px;
+    color: slategray;
+    font-style: italic;
+}
+
+span.plural {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+span.tensexxx {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+span.labelnone {
+    display: none;
+}
+
+span.engamdiffernt {
+    font-size: 95%;
+    font-weight: 400;
+    text-transform: initial;
+    color: slategray;
+    margin: 0 .3em;
+}
+
+span.abbre {
+    border: 1px solid darkslategray;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span.abbrecar {
+    border: 1px solid darkslategray;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span.symbol {
+    border: 1px solid darkslategray;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+pron {
+    padding-left: 2px;
+    padding-right: 8px;
+display: inline-block;
+}
+
+span.nonepron {
+    display: none;
+}
+
+span.spelldiffernt {
+    display: block;
+}
+
+.maybe_phrase.next {
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+span.mphr_en {
+    font-weight: bold;
+    font-size: 95%;
+    color: #343434;
+}
+
+.maybe_phrase {
+    padding-left: 1em;
+}
+
+strong.brief_ex {
+    font-weight: normal;
+    color: #999999;
+}
+
+.maybe_phrase span.zh {
+    font-weight: normal;
+    padding-left: 4px;
+    font-size: 95%;
+}
+
+span.doble.bigword {
+    font-size: 65%;
+    padding-left: 9px;
+}
+
+
+span.doble.bigword:before {
+    content: "or";
+    padding-right: 6px;
+    font-style: italic;
+        color: slategray;
+}
+
+span.or {
+    font-weight: normal;
+    font-style: italic;
+    color: gray;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+span.mphr_en.or {
+    font-weight: bold;
+    font-size: 95%;
+    color: unset;
+    font-style: normal;
+    padding-right: unset;
+    padding-left: unset;
+}
+
+span.collocation {
+    color: #6f938e;
+}
+
+span.differ.big {
+    margin: 0 .5em 0 0;
+}
+
+.idom {
+    background-color: #eadfdf47;
+    margin: 1em;
+}
+
+span.dodo {
+    padding-right: 0.2em;
+}
+
+span.idom {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
