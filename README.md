@@ -1,10 +1,15 @@
 解析MDX/MDD文件，在浏览器显示
 
 需要安装的包：
-pip install flask
-pip install python-lzo
-pip install readmdict
+
+    pip install flask
+
+    pip install python-lzo
+
+    pip install readmdict
+
 等等
+
 
 用法：
    
