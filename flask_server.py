@@ -9,15 +9,19 @@ import shutil
 # 加载.mdx文件,修改此处，可以更换不同的mdx；
 # 注意： 路径下必须同时包含mdx和css文件。
 dict_dir = 'Vocabulary/新东方英语词根词缀'
-dict_dir = 'Vocabulary/etymology'
+#dict_dir = 'Vocabulary/etymology'
 
 mdx_name = glob(os.path.join(dict_dir,'*.mdx'))[0]
 css_name = glob(os.path.join(dict_dir,'*.css'))[0]
+js_name = glob(os.path.join(dict_dir,'*.js'))[0]
 
 print('mdx_name = ', mdx_name)
 print('css_name = ', css_name)
+print('js_name = ', js_name)
 shutil.copy(css_name, 'static/css/')
+shutil.copy(js_name, 'script/')
 css_name = os.path.basename(css_name)
+js_name = os.path.basename(js_name)
 
 mdx = MDX(mdx_name)
 headwords = [*mdx]       # 单词名列表
@@ -58,10 +62,12 @@ def trans():
             else:
                 wordIndex = headwords.index(word1)
             word,html = items[wordIndex]
-            print('********Search: ', wordIndex,word, html)
+            print('********Search: ', wordIndex,word)
             result = html.decode()
             result = result.replace(css_name,os.path.join('static/css',css_name))
-            print('Final Result: \n', result)
+            result = result.replace(js_name,os.path.join('script/js',js_name))
+            print(os.path.join('script/js',js_name))
+            #print('Final Result: \n', result)
         except:
             result = f"<h3>{txt} is not in word_list.</h3>"
             print('Exception:', result)
@@ -84,6 +90,7 @@ def incrementAndSubmit():
         #print('********Search: ', wordIndex,word, html)
         result = html.decode()
         result = result.replace(css_name,os.path.join('static/css',css_name))
+        result = result.replace(js_name,os.path.join('script/js',js_name))
         #print('Final Result: \n', result)
     except:
         result = f"<h3>{increment_id} is not in word_list.</h3>"
