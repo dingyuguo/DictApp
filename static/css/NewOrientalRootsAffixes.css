@@ -365,7 +365,7 @@ div.head-words a {
 	margin-right: 10px;
 	display: inline-block;
 	font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 div.head-words a.key-head-word, div.words-entries.default-show-key-head-word-only div.key-word-entry.key-head-word, .key-sense {
@@ -443,4 +443,21 @@ p.example-cn {
 span.star {
 	margin-left: 3px;
 	color: #d22323;
+	font-size: 9px;
+	position: relative;
+    bottom: 5px;
+}
+
+span.star a {
+	font-size: 12px;
+	position: relative;
+    top: 4.5px;
+}
+
+div.word-entry[id] p span.bold a {
+	color: black;
+}
+
+div.MdxNewOrientalRootsAffixes div.word-entry {
+	display: block !important;
 }
